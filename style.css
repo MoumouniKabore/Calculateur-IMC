@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #7410a5, #38004f);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 0.2rem;
+}
+
+.description {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 2rem;
+}
+
+.entrer {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.form-group {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: #334155;
+}
+
+input {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-calculer {
+    background-color: #2563eb;
+    color: white;
+    width: 70%;
+}
+
+.btn-calculer:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-reset {
+    background-color: #e2e8f0;
+    color: #334155;
+    width: 30%;
+}
+
+.btn-reset:hover {
+    background-color: #cbd5e1;
+}
+
+.resultat {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #eff6ff;
+    border-radius: 0.6rem;
+    text-align: center;
+}
+
+.resultat h4 {
+    color: #2563eb;
+    margin-bottom: 0.4rem;
+}
+
+.resultat p {
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+footer {
+    margin-top: 1.5rem;
+}
+
+footer h4 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 0.8rem;
+}
+
+.categories {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 0.8em;
+}
+
+.cat {
+    background-color: #eff6ff;
+    width: 50%;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.6rem;
+}
+
+.cat h5 {
+    color: #273141;
+    font-size: 14px;
+}
+
+.cat span {
+    color: #9ea2a8;
+    font-size: 13px;
+}
+
+@media (max-width: 450px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn-calculer {
+        width: 100%;
+    }
+
+    .btn-reset {
+        width: 100%;
+    }
+    
+    label {
+        font-size: 12px;
+    }
+    
+    input {
+        padding: 0.4rem 1rem;
+        font-size: 12px;
+    }
+}

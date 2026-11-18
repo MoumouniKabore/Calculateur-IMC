@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculateur IMC</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="card">
+
+                <h1>Calculateur d'IMC</h1>
+                <p class="description">
+                    Calculez votre indice de masse corporelle
+                </p>
+
+                <form>
+                    <div class="entrer">
+                        <div class="form-group">
+                            <label for="poids">Votre poids (kg)</label>
+                            <input type="number" id="poids" min="1" placeholder="Ex : 70">
+                        </div>
+                        <div class="form-group">
+                            <label for="taille">Votre taille (cm)</label>
+                            <input type="number" id="taille" min="1" placeholder="Ex : 175">
+                        </div>  
+                    </div>
+
+                    <div class="buttons">
+                        <button type="button" class="btn-calculer" id="calculer">
+                            Calculer
+                        </button>
+                        <button type="reset" class="btn-reset" id="reset">
+                            Réinitialiser
+                        </button>
+                    </div>
+                </form>
+
+                <div class="resultat">
+                    <h4>Votre résultat</h4>
+                    <p id="resultat">Votre IMC apparaîtra ici.</p>
+                    <p id="messages"></p>
+                </div>
+
+                <footer>
+                    <h4>Interprétation de l'IMC</h4>
+                    <div class="categories">
+                        <div class="cat">
+                            <h5>Moins de 18,5</h5>
+                            <span>Insuffisance pondérale</span>
+                        </div>
+                        <div class="cat">
+                            <h5>18,5 à 24,9</h5>
+                            <span>Corpulence normale</span>
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <div class="cat">
+                            <h5>25 à 29,9</h5>
+                            <span>Surpoids</span>
+                        </div>
+                        <div class="cat">
+                            <h5>30 et plus</h5>
+                            <span>Obésité</span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
